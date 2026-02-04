@@ -53,7 +53,10 @@ onMounted(async () => {
   script.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js'
   document.head.appendChild(script)
 
-  script.onload = () => {
+  await new Promise(resolve => { link.onload = resolve })
+  await new Promise(resolve => { script.onload = resolve })
+
+  setTimeout(() => {
     const L = window.L
     const map = L.map(mapId, { zoomControl: false, attributionControl: false }).setView([25, 20], 2)
     L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}').addTo(map)
@@ -76,7 +79,7 @@ onMounted(async () => {
         </div>
       `, { maxWidth: 220 })
     })
-  }
+  }, 100)
 })
 </script>
 

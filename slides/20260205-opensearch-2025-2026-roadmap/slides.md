@@ -33,7 +33,7 @@ layout: default
 ---
 
 <div class="absolute inset-0 overflow-hidden">
-  <Zoom><img src="https://opensearch.org/wp-content/uploads/2025/07/OpenSearch_4th-Birthday-02-scaled.png" class="w-full" /></Zoom>
+  <Zoom><img src="/images/OpenSearch_4th-Birthday-02-scaled.png" class="w-full" /></Zoom>
 </div>
 
 ---
@@ -335,7 +335,7 @@ Doc Valuesの**ブロック毎にmin/max**を記録
 </div>
 <div>
 
-<Zoom><img src="https://opensearch.org/wp-content/uploads/2025/04/star-tree-structure-1024x575.png" class="h-48 rounded-lg" /></Zoom>
+<Zoom><img src="/images/star-tree-structure-1024x575.png" class="h-48 rounded-lg" /></Zoom>
 
 <div class="text-xs text-gray-400 mt-2">
 ディメンション値の組み合わせごとに事前集計
@@ -395,7 +395,7 @@ Doc Valuesの**ブロック毎にmin/max**を記録
 ### <span class="text-cyan-400 border-b border-cyan-400">一般フィールド (3.2)</span>
 
 <Zoom>
-<img src="https://opensearch.org/wp-content/uploads/2025/10/derived-source-generation.png" class="rounded-lg w-full" />
+<img src="/images/derived-source-generation.png" class="rounded-lg w-full" />
 </Zoom>
 
 <div class="text-sm mt-2">
@@ -412,7 +412,7 @@ Doc Valuesの**ブロック毎にmin/max**を記録
 ### <span class="text-cyan-400 border-b border-cyan-400">ベクトルフィールド (3.0)</span>
 
 <Zoom>
-<img src="https://opensearch.org/wp-content/uploads/2025/06/derived-process-1024x523.png" class="rounded-lg w-full" />
+<img src="/images/derived-process-1024x523.png" class="rounded-lg w-full" />
 </Zoom>
 
 <div class="text-sm mt-2">
@@ -435,7 +435,7 @@ Doc Valuesの**ブロック毎にmin/max**を記録
 
 ### <span class="text-cyan-400 border-b border-cyan-400">Dashboards UI</span>
 
-<Zoom><img src="https://docs.opensearch.org/latest/images/Workload-Management/Overview.png" class="rounded-lg" /></Zoom>
+<Zoom><img src="/images/Overview.png" class="rounded-lg" /></Zoom>
 
 <div class="text-sm mt-2">
 
@@ -472,7 +472,7 @@ CPU / メモリ使用量をワークロードグループ別に可視化
 
 ### <span class="text-cyan-400 border-b border-cyan-400">Top-N Queries</span>
 
-<Zoom><img src="https://docs.opensearch.org/latest/images/Query-Insights/QueryInsights.png" class="rounded-lg" /></Zoom>
+<Zoom><img src="/images/QueryInsights.png" class="rounded-lg" /></Zoom>
 
 <div class="text-sm mt-2">
 
@@ -504,7 +504,7 @@ CPU / メモリ使用量をワークロードグループ別に可視化
 <div class="grid grid-cols-2 gap-6 mt-2">
 <div>
 
-<Zoom><img src="https://opensearch.org/wp-content/uploads/2025/05/rw-separation-architecture.png" class="rounded-lg h-96" /></Zoom>
+<Zoom><img src="/images/rw-separation-architecture.png" class="rounded-lg h-96" /></Zoom>
 
 </div>
 <div>
@@ -596,7 +596,7 @@ CPU / メモリ使用量をワークロードグループ別に可視化
 <div class="grid grid-cols-2 gap-4 mt-1">
 <div>
 
-<Zoom><img src="https://storage.googleapis.com/zenn-user-upload/deployed-images/bd81d8ab8bf1f56f2a59f96d.png" class="rounded-lg w-full" /></Zoom>
+<Zoom><img src="/images/bd81d8ab8bf1f56f2a59f96d.png" class="rounded-lg w-full" /></Zoom>
 
 <div class="text-xs text-gray-400 mt-1">エージェント設定画面（Dashboards > AI Search Flows）</div>
 
@@ -828,7 +828,7 @@ POST my_index/_search
 
 ### <span class="text-cyan-400">処理の流れ</span>
 
-<Zoom><img src="https://opensearch.org/wp-content/uploads/2025/09/running-lucene-hnsw-algorithm-on-faiss-index.png" class="rounded-lg" /></Zoom>
+<Zoom><img src="/images/running-lucene-hnsw-algorithm-on-faiss-index.png" class="rounded-lg" /></Zoom>
 
 - Lucene が次の訪問ノードを決定。Faiss インデックスから必要なベクトルのみ読み込み
 - Faiss 上で 距離計算を行い、結果を Lucene に返却
@@ -859,7 +859,7 @@ POST my_index/_search
 
 ### <span class="text-cyan-400 border-b border-cyan-400">Random Rotation</span>
 
-<Zoom><img src="https://opensearch.org/wp-content/uploads/2025/12/quantization_example.png" class="rounded-lg" /></Zoom>
+<Zoom><img src="/images/quantization_example.png" class="rounded-lg" /></Zoom>
 
 <div class="mt-2 text-sm">
 
@@ -875,7 +875,7 @@ POST my_index/_search
 
 ### <span class="text-cyan-400 border-b border-cyan-400">ADC (Asymmetric Distance)</span>
 
-<Zoom><img src="https://opensearch.org/wp-content/uploads/2025/11/Mean-Centering.png" class="rounded-lg" /></Zoom>
+<Zoom><img src="/images/Mean-Centering.png" class="rounded-lg" /></Zoom>
 
 <div class="mt-2 text-sm">
 
@@ -901,7 +901,7 @@ POST my_index/_search
 <div class="grid grid-cols-2 gap-6 mt-2">
 <div>
 
-<Zoom><img src="https://opensearch.org/wp-content/uploads/2025/05/diagram-1024x765.png" class="rounded-lg" /></Zoom>
+<Zoom><img src="/images/diagram-1024x765.png" class="rounded-lg" /></Zoom>
 
 </div>
 <div>
@@ -940,7 +940,7 @@ POST my_index/_search
 <div class="grid grid-cols-3 gap-4 mt-2">
 <div class="text-center">
 <div class="text-sm font-bold text-cyan-400 mb-2">1. Query Set 作成</div>
-<Zoom><img src="https://opensearch.org/wp-content/uploads/2025/08/create_query_set_v3.png" class="rounded border border-gray-600 w-full" /></Zoom>
+<Zoom><img src="/images/create_query_set_v3.png" class="rounded border border-gray-600 w-full" /></Zoom>
 <div class="text-xs text-gray-400 mt-2 text-left">
 評価対象のクエリ集合を定義<br/>
 • 実ユーザーのクエリログからサンプリング<br/>
@@ -949,7 +949,7 @@ POST my_index/_search
 </div>
 <div class="text-center">
 <div class="text-sm font-bold text-cyan-400 mb-2">2. Search Config 定義</div>
-<Zoom><img src="https://opensearch.org/wp-content/uploads/2025/08/create_search_config_keyword_v2.png" class="rounded border border-gray-600 w-full" /></Zoom>
+<Zoom><img src="/images/create_search_config_keyword_v2.png" class="rounded border border-gray-600 w-full" /></Zoom>
 <div class="text-xs text-gray-400 mt-2 text-left">
 比較する検索設定を2つ定義<br/>
 • クエリ本文 + パイプライン<br/>
@@ -958,7 +958,7 @@ POST my_index/_search
 </div>
 <div class="text-center">
 <div class="text-sm font-bold text-cyan-400 mb-2">3. 実験結果</div>
-<Zoom><img src="https://opensearch.org/wp-content/uploads/2025/09/12_eval_visualization.png" class="rounded border border-gray-600 w-full" /></Zoom>
+<Zoom><img src="/images/12_eval_visualization.png" class="rounded border border-gray-600 w-full" /></Zoom>
 <div class="text-xs text-gray-400 mt-2 text-left">
 • Jaccard / RBO: 結果の変化を測定<br/>
 • nDCG: Judgment で定量評価<br/>
@@ -1192,7 +1192,7 @@ flowchart LR
 
 ### <span class="text-cyan-400 border-b border-cyan-400">ワークフロービルダー</span>
 
-<Zoom><img src="https://docs.opensearch.org/latest/images/dashboards-flow-framework/details-page.png" class="rounded-lg" /></Zoom>
+<Zoom><img src="/images/details-page.png" class="rounded-lg" /></Zoom>
 
 <div class="text-xs text-gray-400 mt-1">IDE風UI: フロー概要 / 設定 / テスト</div>
 
@@ -1345,7 +1345,7 @@ sequenceDiagram
 
 ### <span class="text-cyan-400 border-b border-cyan-400">ログ・トレース・メトリクスを統合</span>
 
-<Zoom><img src="https://opensearch.org/wp-content/uploads/2025/02/download-1-scaled.png" class="rounded-lg" /></Zoom>
+<Zoom><img src="/images/download-1-scaled.png" class="rounded-lg" /></Zoom>
 
 <div class="text-sm mt-2">
 
@@ -1358,7 +1358,7 @@ sequenceDiagram
 
 ### <span class="text-cyan-400 border-b border-cyan-400">React Flow サービスマップ</span>
 
-<Zoom><img src="https://opensearch.org/wp-content/uploads/2025/10/reactFlow-1-scaled.gif" class="rounded-lg w-full" /></Zoom>
+<Zoom><img src="/images/reactFlow-1-scaled.gif" class="rounded-lg w-full" /></Zoom>
 
 <div class="text-sm mt-2">
 
@@ -1380,7 +1380,7 @@ sequenceDiagram
 <div class="grid grid-cols-2 gap-6 mt-2">
 <div>
 
-<Zoom><img src="https://opensearch.org/wp-content/uploads/2025/06/query_lifecycle-711x1024.png" class="rounded-lg h-96" /></Zoom>
+<Zoom><img src="/images/query_lifecycle-711x1024.png" class="rounded-lg h-96" /></Zoom>
 
 </div>
 <div>
@@ -1580,7 +1580,7 @@ Snapshot 内の Lucene ファイルから `_source` を直接抽出し、ター�
 </div>
 <div>
 
-<img src="https://d2908q01vomqb2.cloudfront.net/b6692ea5df920cad691c20319a6fffd7a4a766b8/2024/11/20/bdb-4814-img1.png" class="h-80 mx-auto" />
+<img src="/images/bdb-4814-img1.png" class="h-80 mx-auto" />
 
 </div>
 </div>
@@ -1666,43 +1666,43 @@ Foundation・コミュニティ・イベント
 ### <span class="text-cyan-400">Premier Members</span>
 
 <div class="flex flex-wrap gap-6 items-center justify-center my-3">
-  <img src="https://lf-master-organization-logos-prod.s3.us-east-2.amazonaws.com/amazon-web-services-inc.svg" alt="AWS" class="w-24 bg-white p-2 rounded" />
+  <img src="/images/amazon-web-services-inc.svg" alt="AWS" class="w-24 bg-white p-2 rounded" />
   <div class="flex flex-col items-center">
-    <img src="https://lf-master-organization-logos-prod.s3.us-east-2.amazonaws.com/international-business-machines-corporation.svg" alt="IBM" class="w-24 bg-white p-2 rounded" />
+    <img src="/images/international-business-machines-corporation.svg" alt="IBM" class="w-24 bg-white p-2 rounded" />
     <span class="text-green-400 text-xs">New in 2025</span>
   </div>
-  <img src="https://lf-master-organization-logos-prod.s3.us-east-2.amazonaws.com/sap-se.svg" alt="SAP" class="w-24 bg-white p-2 rounded" />
-  <img src="https://lf-master-organization-logos-prod.s3.us-east-2.amazonaws.com/uber-technologies-inc.svg" alt="Uber" class="w-24 bg-white p-2 rounded" />
+  <img src="/images/sap-se.svg" alt="SAP" class="w-24 bg-white p-2 rounded" />
+  <img src="/images/uber-technologies-inc.svg" alt="Uber" class="w-24 bg-white p-2 rounded" />
 </div>
 
 ### <span class="text-cyan-400">General Members</span>
 
 <div class="grid grid-cols-6 gap-2 my-2">
-  <img src="https://lf-master-organization-logos-prod.s3.us-east-2.amazonaws.com/aiven.svg" alt="Aiven" class="h-7 mx-auto bg-white p-1 rounded" />
-  <img src="https://lf-master-organization-logos-prod.s3.us-east-2.amazonaws.com/aryn%2C-inc..svg" alt="Aryn" class="h-7 mx-auto bg-white p-1 rounded" />
+  <img src="/images/aiven.svg" alt="Aiven" class="h-7 mx-auto bg-white p-1 rounded" />
+  <img src="/images/aryn-inc.svg" alt="Aryn" class="h-7 mx-auto bg-white p-1 rounded" />
   <div class="flex flex-col items-center">
-    <img src="https://lf-platform-documents-prod.s3.amazonaws.com/bytedance_inc_1743697962974_001QP00000cdgBdYAI.svg" alt="ByteDance" class="h-7 bg-white p-1 rounded" />
+    <img src="/images/bytedance_inc_1743697962974_001QP00000cdgBdYAI.svg" alt="ByteDance" class="h-7 bg-white p-1 rounded" />
     <span class="text-green-400 text-xs">New</span>
   </div>
   <div class="flex flex-col items-center">
-    <img src="https://lf-platform-documents-prod.s3.amazonaws.com/canonical_group_limited_1698420319473_0014100000Tdzf1AAB.svg" alt="Canonical" class="h-7 bg-white p-1 rounded" />
+    <img src="/images/canonical_group_limited_1698420319473_0014100000Tdzf1AAB.svg" alt="Canonical" class="h-7 bg-white p-1 rounded" />
     <span class="text-green-400 text-xs">New</span>
   </div>
-  <img src="https://lf-master-organization-logos-prod.s3.us-east-2.amazonaws.com/digitalocean.svg" alt="DigitalOcean" class="h-7 mx-auto bg-white p-1 rounded" />
+  <img src="/images/digitalocean.svg" alt="DigitalOcean" class="h-7 mx-auto bg-white p-1 rounded" />
   <div class="flex flex-col items-center">
-    <img src="https://lf-master-organization-logos-prod.s3.us-east-2.amazonaws.com/dtex-systems-inc..svg" alt="DTEX" class="h-7 bg-white p-1 rounded" />
+    <img src="/images/dtex-systems-inc..svg" alt="DTEX" class="h-7 bg-white p-1 rounded" />
     <span class="text-green-400 text-xs">New</span>
   </div>
-  <img src="https://lf-master-organization-logos-prod.s3.us-east-2.amazonaws.com/eliatra.svg" alt="Eliatra" class="h-7 mx-auto bg-white p-1 rounded" />
+  <img src="/images/eliatra.svg" alt="Eliatra" class="h-7 mx-auto bg-white p-1 rounded" />
   <div class="flex flex-col items-center">
-    <img src="https://lf-platform-documents-prod.s3.amazonaws.com/netapp_inc_1377_1746539293443_0014100000Te2D5AAJ.svg" alt="NetApp" class="h-7 bg-white p-1 rounded" />
+    <img src="/images/netapp_inc_1377_1746539293443_0014100000Te2D5AAJ.svg" alt="NetApp" class="h-7 bg-white p-1 rounded" />
     <span class="text-green-400 text-xs">New</span>
   </div>
-  <img src="https://lf-master-organization-logos-prod.s3.us-east-2.amazonaws.com/opensource-connections.svg" alt="OSC" class="h-7 mx-auto bg-white p-1 rounded" />
-  <img src="https://lf-master-organization-logos-prod.s3.us-east-2.amazonaws.com/portal26.svg" alt="Portal26" class="h-7 mx-auto bg-white p-1 rounded" />
-  <img src="https://lf-master-organization-logos-prod.s3.us-east-2.amazonaws.com/resolve-technology.svg" alt="Resolve" class="h-7 mx-auto bg-white p-1 rounded" />
+  <img src="/images/opensource-connections.svg" alt="OSC" class="h-7 mx-auto bg-white p-1 rounded" />
+  <img src="/images/portal26.svg" alt="Portal26" class="h-7 mx-auto bg-white p-1 rounded" />
+  <img src="/images/resolve-technology.svg" alt="Resolve" class="h-7 mx-auto bg-white p-1 rounded" />
   <div class="flex flex-col items-center">
-    <img src="https://lf-master-organization-logos-prod.s3.us-east-2.amazonaws.com/Seacomsrlsb.svg" alt="Seacom" class="h-7 bg-white p-1 rounded" />
+    <img src="/images/Seacomsrlsb.svg" alt="Seacom" class="h-7 bg-white p-1 rounded" />
     <span class="text-green-400 text-xs">New</span>
   </div>
 </div>
@@ -1715,19 +1715,19 @@ Foundation・コミュニティ・イベント
 
 <div class="grid grid-cols-4 gap-4 text-center text-xs mt-2">
   <div class="flex flex-col items-center">
-    <img src="https://platform-logos-myprofile-api-prod.s3.us-east-2.amazonaws.com/carlmead.png?v=1746621991486" class="w-14 h-14 rounded-full object-cover mb-1" />
+    <img src="/images/carlmead.png?v=1746621991486" class="w-14 h-14 rounded-full object-cover mb-1" />
     <div class="font-bold">Carl Meadows</div>
     <div class="text-gray-400">AWS</div>
     <div class="text-blue-400">Chair</div>
   </div>
   <div class="flex flex-col items-center">
-    <img src="https://lfx-cdn-prod.s3.amazonaws.com/users/avatar/a.png" class="w-14 h-14 rounded-full object-cover mb-1 bg-gray-600" />
+    <img src="/images/a.png" class="w-14 h-14 rounded-full object-cover mb-1 bg-gray-600" />
     <div class="font-bold">Andrew Ross</div>
     <div class="text-gray-400">AWS</div>
     <div class="text-blue-400">TSC Representative</div>
   </div>
   <div class="flex flex-col items-center">
-    <img src="https://platform-logos-myprofile-api-prod.s3.us-east-2.amazonaws.com/velo1980.png?v=1736976860886" class="w-14 h-14 rounded-full object-cover mb-1" />
+    <img src="/images/velo1980.png?v=1736976860886" class="w-14 h-14 rounded-full object-cover mb-1" />
     <div class="font-bold">Verena Lommatzsch</div>
     <div class="text-gray-400">SAP</div>
     <div class="text-blue-400">Premier Member</div>
@@ -1742,7 +1742,7 @@ Foundation・コミュニティ・イベント
 
 <div class="grid grid-cols-4 gap-4 text-center text-xs mt-3">
   <div class="flex flex-col items-center">
-    <img src="https://platform-logos-myprofile-api-prod.s3.us-east-2.amazonaws.com/benslater.png?v=1761867834345" class="w-14 h-14 rounded-full object-cover mb-1" />
+    <img src="/images/benslater.png?v=1761867834345" class="w-14 h-14 rounded-full object-cover mb-1" />
     <div class="font-bold">Ben Slater</div>
     <div class="text-gray-400">NetApp</div>
     <div class="text-green-400">General Member</div>
@@ -1754,13 +1754,13 @@ Foundation・コミュニティ・イベント
     <div class="text-green-400">General Member</div>
   </div>
   <div class="flex flex-col items-center">
-    <img src="https://platform-logos-myprofile-api-prod.s3.us-east-2.amazonaws.com/mashah.png?v=1737042517180" class="w-14 h-14 rounded-full object-cover mb-1" />
+    <img src="/images/mashah.png?v=1737042517180" class="w-14 h-14 rounded-full object-cover mb-1" />
     <div class="font-bold">Mehul Shah</div>
     <div class="text-gray-400">Aryn</div>
     <div class="text-green-400">General Member</div>
   </div>
   <div class="flex flex-col items-center">
-    <img src="https://lfx-cdn-prod.s3.amazonaws.com/users/avatar/y.png" class="w-14 h-14 rounded-full object-cover mb-1 bg-gray-600" />
+    <img src="/images/y.png" class="w-14 h-14 rounded-full object-cover mb-1 bg-gray-600" />
     <div class="font-bold">Yakun Li</div>
     <div class="text-gray-400">ByteDance</div>
     <div class="text-green-400">General Member</div>
@@ -1843,42 +1843,42 @@ AWS, Uber, SAP, Apple, Paessler
 
 <div class="grid grid-cols-4 gap-3 text-xs mt-2">
   <div class="text-center">
-    <img src="https://opensearch.org/wp-content/uploads/2025/08/Amanda-Katona.jpg" class="w-14 h-14 rounded-full mx-auto object-cover" />
+    <img src="/images/Amanda-Katona.jpg" class="w-14 h-14 rounded-full mx-auto object-cover" />
     <div class="font-bold mt-1">Amanda Katona</div>
     <div class="text-gray-400">NetApp</div>
   </div>
   <div class="text-center">
-    <img src="https://opensearch.org/wp-content/uploads/2025/08/charlie_hull.png" class="w-14 h-14 rounded-full mx-auto object-cover" />
+    <img src="/images/charlie_hull.png" class="w-14 h-14 rounded-full mx-auto object-cover" />
     <div class="font-bold mt-1">Charlie Hull</div>
     <div class="text-gray-400">The Search Juggler</div>
   </div>
   <div class="text-center">
-    <img src="https://opensearch.org/wp-content/uploads/2025/08/dotan_headshot.png" class="w-14 h-14 rounded-full mx-auto object-cover" />
+    <img src="/images/dotan_headshot.png" class="w-14 h-14 rounded-full mx-auto object-cover" />
     <div class="font-bold mt-1">Dotan Horovits</div>
     <div class="text-gray-400">AWS</div>
   </div>
   <div class="text-center">
-    <img src="https://opensearch.org/wp-content/uploads/2025/09/Eric-Pugh-scaled.jpg" class="w-14 h-14 rounded-full mx-auto object-cover" />
+    <img src="/images/Eric-Pugh-scaled.jpg" class="w-14 h-14 rounded-full mx-auto object-cover" />
     <div class="font-bold mt-1">Eric Pugh</div>
     <div class="text-gray-400">OSC</div>
   </div>
   <div class="text-center">
-    <img src="https://opensearch.org/wp-content/uploads/2025/09/Itamar-Syn-Hershko-scaled-e1756926722838.jpg" class="w-14 h-14 rounded-full mx-auto object-cover" />
+    <img src="/images/Itamar-Syn-Hershko-scaled-e1756926722838.jpg" class="w-14 h-14 rounded-full mx-auto object-cover" />
     <div class="font-bold mt-1">Itamar Syn-Hershko</div>
     <div class="text-gray-400">BigData Boutique</div>
   </div>
   <div class="text-center">
-    <img src="https://opensearch.org/wp-content/uploads/2025/09/Kassian-Rosner-Wren.jpg" class="w-14 h-14 rounded-full mx-auto object-cover" />
+    <img src="/images/Kassian-Rosner-Wren.jpg" class="w-14 h-14 rounded-full mx-auto object-cover" />
     <div class="font-bold mt-1">Kassian Rosner Wren</div>
     <div class="text-gray-400">NetApp</div>
   </div>
   <div class="text-center">
-    <img src="https://opensearch.org/wp-content/uploads/2024/12/krisfreedain.jpg" class="w-14 h-14 rounded-full mx-auto object-cover" />
+    <img src="/images/krisfreedain.jpg" class="w-14 h-14 rounded-full mx-auto object-cover" />
     <div class="font-bold mt-1">Kris Freedain</div>
     <div class="text-gray-400">AWS</div>
   </div>
   <div class="text-center">
-    <img src="https://opensearch.org/wp-content/uploads/2025/08/laysa_uchoa.png" class="w-14 h-14 rounded-full mx-auto object-cover" />
+    <img src="/images/laysa_uchoa.png" class="w-14 h-14 rounded-full mx-auto object-cover" />
     <div class="font-bold mt-1">Laysa Uchoa</div>
     <div class="text-gray-400">Nordcloud</div>
   </div>
@@ -2493,7 +2493,7 @@ flowchart TB
 
 **コントリビュート**
 - Issue報告・PR: GitHub
-- Ambassadorに応募（3月・9月）
+- [Ambassadorに応募](https://opensearch.org/blog/opensearch-ambassador-applications-are-now-open/)（2月・9月）🔥 Now Open!
 - OpenSearchCon で発表
 
 </div>
