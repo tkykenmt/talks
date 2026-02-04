@@ -1,6 +1,7 @@
 ---
 theme: opensearch-template-darkmode
 title: OpenSearch 2025 - 2026
+routerMode: hash
 ---
 
 <style>
