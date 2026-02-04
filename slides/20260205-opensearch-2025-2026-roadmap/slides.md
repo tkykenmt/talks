@@ -27,6 +27,27 @@ Takayuki Enomoto
 layout: section
 ---
 
+# アジェンダ
+
+<div class="flex justify-center gap-12 mt-16">
+<div class="text-center">
+<div class="text-5xl mb-4">🚀</div>
+<div class="text-xl font-bold">2025年の<br>リリースハイライト</div>
+</div>
+<div class="text-center">
+<div class="text-5xl mb-4">🌏</div>
+<div class="text-xl font-bold">コミュニティ活動の<br>振り返り</div>
+</div>
+<div class="text-center">
+<div class="text-5xl mb-4">🔮</div>
+<div class="text-xl font-bold">2026年の<br>ロードマップ</div>
+</div>
+</div>
+
+---
+layout: section
+---
+
 # 2025年のハイライト
 
 ---
