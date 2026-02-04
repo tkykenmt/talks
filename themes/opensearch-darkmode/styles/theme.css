@@ -1,0 +1,21 @@
+/* Theme colors extracted from PowerPoint */
+:root {
+
+  /* Map to Slidev variables */
+}
+
+.dark {
+}
+
+/* Typography */
+.slidev-layout {
+}
+
+.slidev-layout h1,
+.slidev-layout h2,
+.slidev-layout h3 {
+}
+
+a {
+  color: var(--slidev-theme-link, var(--slidev-theme-primary));
+}

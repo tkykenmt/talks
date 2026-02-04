@@ -1,0 +1,39 @@
+{
+  "name": "slidev-theme-opensearch-template-darkmode",
+  "version": "0.1.0",
+  "keywords": [
+    "slidev-theme",
+    "slidev"
+  ],
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0",
+    "slidev": ">=0.48.0"
+  },
+  "files": [
+    "assets",
+    "components",
+    "layouts",
+    "styles",
+    "slides.md"
+  ],
+  "scripts": {
+    "dev": "slidev --open",
+    "build": "slidev build",
+    "export": "slidev export"
+  },
+  "devDependencies": {
+    "@slidev/cli": "^52.0.0",
+    "@slidev/types": "^52.0.0"
+  },
+  "slidev": {
+    "colorSchema": "both",
+    "defaults": {
+      "fonts": {
+        "sans": "sans-serif",
+        "serif": "sans-serif",
+        "mono": "monospace"
+      }
+    }
+  }
+}

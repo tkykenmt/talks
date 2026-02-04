@@ -1,0 +1,8 @@
+{
+  "name": "talks",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm -F",
+    "build": "pnpm -r build"
+  }
+}

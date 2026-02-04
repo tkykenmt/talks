@@ -1,0 +1,14 @@
+{
+  "name": "20260205-opensearch-2025-2026-roadmap",
+  "private": true,
+  "scripts": {
+    "dev": "slidev",
+    "build": "slidev build",
+    "export": "slidev export"
+  },
+  "dependencies": {
+    "@slidev/cli": "^52.11.4",
+    "@slidev/theme-default": "^0.25.0",
+    "slidev-theme-opensearch-template-darkmode": "workspace:*"
+  }
+}
