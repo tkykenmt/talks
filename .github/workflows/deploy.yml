@@ -39,6 +39,7 @@ jobs:
             name=$(basename "$pkg")
             pnpm --filter "$name" build --base /${{github.event.repository.name}}/$name/
             mv "$pkg/dist" "dist/$name"
+            cp "dist/$name/index.html" "dist/$name/404.html"
           done
 
       - name: Create index page
