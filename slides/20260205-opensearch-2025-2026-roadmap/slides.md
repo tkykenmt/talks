@@ -3,7 +3,7 @@ theme: opensearch-template-darkmode
 title: OpenSearch 2025 - 2026
 routerMode: hash
 fonts:
-  sans: 'Noto Sans JP, Noto Color Emoji'
+  sans: 'Open Sans, Noto Sans JP, Noto Color Emoji'
 ---
 
 <style>

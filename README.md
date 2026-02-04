@@ -21,6 +21,24 @@ pnpm --filter <slide-name> dev
 pnpm --filter 20260205-opensearch-2025-2026-roadmap dev
 ```
 
+## PDF エクスポート
+
+```bash
+# システムの Chrome を使用してエクスポート（フォント埋め込み対応）
+cd slides/<slide-name>
+pnpm slidev export --executable-path /usr/bin/google-chrome --output <slug>.pdf
+```
+
+### 必要なフォント
+
+PDF エクスポートでフォントが正しく表示されるよう、以下のフォントをシステムにインストールしてください：
+
+```bash
+# Ubuntu/Debian
+sudo apt install fonts-noto-cjk fonts-noto-color-emoji fonts-open-sans
+fc-cache -fv
+```
+
 ## 構成
 
 ```
