@@ -36,7 +36,8 @@ OpenSearch は検索や Observability のワークロードのための OSS で�
 
 # タイムテーブル
 
-<div class="mt-4">
+<div class="grid grid-cols-2 gap-8 mt-4">
+<div>
 
 | 時間 | 内容 |
 |------|------|
@@ -45,13 +46,20 @@ OpenSearch は検索や Observability のワークロードのための OSS で�
 | 19:05 | OpenSearch Project アップデート |
 | 19:25 | OpenSearchCon レポート |
 | 19:50 | ユーザーセッション① 弥生株式会社 |
-| 20:15 | ユーザーセッション② Serverless Operations, Inc. |
+
+</div>
+<div>
+
+| 時間 | 内容 |
+|------|------|
+| 20:15 | ユーザーセッション② Serverless Operations |
 | 20:40 | ユーザーセッション③ 株式会社ラクス |
 | 21:00 | クロージング（中締め） |
 | 21:05 | 懇親会 |
 | 21:45 | 退館開始 |
 | 22:00 | 完全退館 |
 
+</div>
 </div>
 
 ---
