@@ -20,6 +20,18 @@ importers:
         specifier: workspace:*
         version: link:../../themes/opensearch-darkmode
 
+  slides/20260205-opensearch-meetup-tokyo-timetable:
+    dependencies:
+      '@slidev/cli':
+        specifier: ^52.0.0
+        version: 52.11.5(@nuxt/kit@3.21.0)(@types/markdown-it@14.1.2)(@types/node@22.19.8)(@vue/compiler-sfc@3.5.27)(markdown-it-async@2.2.0)(postcss@8.5.6)
+      '@slidev/theme-default':
+        specifier: latest
+        version: 0.25.0
+      slidev-theme-opensearch-template-darkmode:
+        specifier: workspace:*
+        version: link:../../themes/opensearch-darkmode
+
   themes/opensearch-darkmode:
     devDependencies:
       '@slidev/cli':
