@@ -12,6 +12,26 @@ routerMode: hash
 OpenSearch Tokyo User Group
 </div>
 
+<div class="mt-4 text-gray-500">#OpenSearch #OpenSearchCommunity</div>
+
+---
+
+# Welcome to OpenSearch Tokyo User Group!
+
+<div class="mt-6 text-xl leading-relaxed">
+
+OpenSearch Tokyo User Group の第一回ミートアップイベントへようこそ！
+
+OpenSearch は検索や Observability のワークロードのための OSS です。
+
+本イベントでは、OpenSearch プロジェクトの概要や OSS の今後のロードマップ、ユーザからの体験談などをご紹介します。
+
+</div>
+
+<div class="mt-8 text-gray-400">
+⚠️ 扱わないトピック: AWS などのベンダーサービス固有の話
+</div>
+
 ---
 
 # タイムテーブル
