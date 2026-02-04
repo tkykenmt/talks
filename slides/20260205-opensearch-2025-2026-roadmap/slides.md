@@ -2,6 +2,8 @@
 theme: opensearch-template-darkmode
 title: OpenSearch 2025 - 2026
 routerMode: hash
+fonts:
+  sans: 'Noto Sans JP, Noto Color Emoji'
 ---
 
 <style>
@@ -124,6 +126,7 @@ layout: default
 
 # 2025年リリースと主要アップデート
 
+
 <div class="grid grid-cols-5 gap-6 mt-4">
 <div class="col-span-2">
 
@@ -164,7 +167,7 @@ layout: default
 </div>
 <div class="bg-purple-900/30 rounded-lg p-3">
 <div class="text-purple-400 font-bold">精度・ランキング改善</div>
-<div class="text-lg text-white">リスコアリングの追加、量子化ベクトルの検索精度改善、検索品質評価</div>
+<div class="text-lg text-white">リスコアの拡充、検索品質評価機能の追加</div>
 </div>
 <div class="bg-yellow-900/30 rounded-lg p-3">
 <div class="text-purple-400 font-bold">AI/エージェント対応</div>
@@ -331,6 +334,7 @@ Doc Valuesの**ブロック毎にmin/max**を記録
 
 # Star-tree Index: 集計最大100倍高速化
 
+
 <div class="grid grid-cols-2 gap-6 mt-2">
 <div>
 
@@ -341,11 +345,6 @@ Doc Valuesの**ブロック毎にmin/max**を記録
 | status=200 (2億件) | 4.2秒 | **6.3ms** |
 | status=400 (3千件) | 5ms | **6.5ms** |
 
-### <span class="text-cyan-400">効果</span>
-
-- クエリ処理量: **100分の1**
-- **予測可能なレイテンシ**
-- 高カーディナリティで特に効果大
 
 ### <span class="text-cyan-400">適用条件</span>
 
@@ -521,7 +520,7 @@ CPU / メモリ使用量をワークロードグループ別に可視化
 
 ---
 
-# Reader/Writer 分離: 柔軟なスケーリング (3.0 experimental)
+# Reader/Writer 分離: 柔軟なスケーリング 
 
 <div class="grid grid-cols-2 gap-6 mt-2">
 <div>
@@ -580,6 +579,7 @@ CPU / メモリ使用量をワークロードグループ別に可視化
 
 # 検索: 精度・ランキング / 性能
 
+
 <div class="grid grid-cols-2 gap-6 mt-4">
 <div class="bg-purple-900/30 rounded-lg p-5">
 
@@ -587,11 +587,10 @@ CPU / メモリ使用量をワークロードグループ別に可視化
 
 - **RRF / Z-score 正規化**: ハイブリッド検索のスコア統合改善
 - **Asymmetric Distance**: クエリ精度を維持した量子化
-- **Random Rotation**: 量子化時の情報損失を軽減
+- **Random Rotation**: 量子化の情報損失を軽減
 - **Maximal Marginal Relevance**: 結果の多様性確保
 - **Learning to Rank**: ML モデルによるリスコアリング
 - **Search Relevance Workbench**: 検索品質の評価・比較ツール
-- **UBI**: ユーザー行動データの収集・分析
 
 </div>
 <div class="bg-orange-900/30 rounded-lg p-5">
@@ -1496,9 +1495,7 @@ OpenSearch メトリクスを Prometheus 形式で公開
 
 ### <span class="text-cyan-400">ユースケース</span>
 
-- RDB → OpenSearch のリアルタイム検索
-- データレイク構築
-- イベント駆動アーキテクチャ
+- RDB -> OpenSearch のリアルタイム同期
 
 </div>
 <div class="col-span-3">
@@ -1583,12 +1580,13 @@ flowchart TB
 
 # Reindex-from-Snapshot (RFS): 高速データ移行
 
+
 <div class="grid grid-cols-2 gap-4 mt-2">
 <div>
 
 ### <span class="text-yellow-400">通常の Snapshot Restore との違い</span>
 
-| | Snapshot Restore | RFS |
+| | Snapshot| RFS |
 |---|:---:|:---:|
 | メジャーバージョン跨ぎ | ❌ 1つまで | ✅ 複数OK |
 | ES 6.x → OS 2.x | ❌ | ✅ |
@@ -1672,11 +1670,7 @@ Foundation・コミュニティ・イベント
 </div>
 
 <div class="flex justify-center mt-4">
-<div class="border border-purple-500 rounded-lg p-2 px-6 text-xs text-center">
 
-**Ambassadors** - 個人としてコミュニティ活動を推進
-
-</div>
 </div>
 
 ---
@@ -2532,5 +2526,3 @@ layout: cover
 引き続きセッションをお楽しみください
 
 </div>
-
-

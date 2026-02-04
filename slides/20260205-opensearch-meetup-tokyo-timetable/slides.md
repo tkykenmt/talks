@@ -2,6 +2,8 @@
 theme: opensearch-template-darkmode
 title: OpenSearch Meetup Tokyo #1
 routerMode: hash
+fonts:
+  sans: 'Noto Sans JP, Noto Color Emoji'
 ---
 
 # OpenSearch Meetup Tokyo #1

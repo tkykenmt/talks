@@ -4,5 +4,8 @@
   "scripts": {
     "dev": "pnpm -F",
     "build": "pnpm -r build"
+  },
+  "devDependencies": {
+    "playwright-chromium": "^1.58.1"
   }
 }
