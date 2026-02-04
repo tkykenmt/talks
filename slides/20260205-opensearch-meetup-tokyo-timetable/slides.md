@@ -41,11 +41,15 @@ OpenSearch は検索や Observability のワークロードのための OSS で�
 | 時間 | 内容 |
 |------|------|
 | 18:30 | 開場・受付 |
-| 19:00 | OpenSearch プロジェクト最新情報 |
-| 19:30 | ユーザーセッション① 弥生株式会社 |
-| 20:00 | ユーザーセッション② Serverless Operations, Inc. |
-| 20:30 | ユーザーセッション③ 株式会社ラクス |
-| 21:00 | 懇親会 |
+| 19:00 | オープニング |
+| 19:05 | OpenSearch Project アップデート |
+| 19:25 | OpenSearchCon レポート |
+| 19:50 | ユーザーセッション① 弥生株式会社 |
+| 20:15 | ユーザーセッション② Serverless Operations, Inc. |
+| 20:40 | ユーザーセッション③ 株式会社ラクス |
+| 21:00 | クロージング（中締め） |
+| 21:05 | 懇親会 |
+| 21:45 | 退館開始 |
 | 22:00 | 完全退館 |
 
 </div>
@@ -84,6 +88,20 @@ ISM、Index、Shardの基本概念から、シャードサイズ設計のベス�
 
 <div class="text-base text-gray-400 leading-relaxed">
 5,000万件超のベクトルを対象に、メモリコストの増加を Disk-based vector search の活用で抑えた事例を紹介。
+</div>
+
+---
+
+# 次回登壇者募集中！
+
+<div class="flex justify-center items-center gap-12 mt-8">
+<div>
+<img src="/speaker-form-qr.png" class="w-64 h-64" />
+</div>
+<div class="text-left">
+<div class="text-xl mb-4">OpenSearch に関する体験談、<br>ナレッジシェアをお待ちしています</div>
+<div class="text-gray-400">応募フォームはこちら →</div>
+</div>
 </div>
 
 ---
