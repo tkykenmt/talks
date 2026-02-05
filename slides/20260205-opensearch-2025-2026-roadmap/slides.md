@@ -697,6 +697,55 @@ GET /products/_search?search_pipeline=agentic-pipeline
 
 ---
 
+# Combined Fields Query: BM25F によるマルチフィールド検索 (3.2)
+
+<div class="grid grid-cols-2 gap-6 mt-2">
+<div>
+
+### <span class="text-cyan-400">従来の問題: cross_fields</span>
+
+出現頻度 (TF) と saturation をフィールドごとに計算するため、スコア最適化において boost への依存度が高い
+
+```json
+{
+  "query": {
+    "multi_match": {
+      "query": "javascript book",
+      "fields": ["title^0.5", "body"],
+      "type": "cross_fields"
+    }
+  }
+}
+```
+
+</div>
+<div>
+
+### <span class="text-cyan-400">BM25F の解決策</span>
+
+- TF を統合してから saturation を適用するため、boost への依存度が下がる
+- 制約: 全フィールドが同一 analyzer
+
+```json
+{
+  "query": {
+    "combined_fields": {
+      "query": "javascript book",
+      "fields": ["title", "body"]
+    }
+  }
+}
+```
+
+</div>
+</div>
+
+<div class="absolute bottom-4 right-4 text-xs text-gray-500">
+<a href="https://docs.opensearch.org/latest/query-dsl/full-text/combined-fields/" target="_blank">出典: Combined fields query documentation</a>
+</div>
+
+---
+
 # Terms Lookup by Query: 動的フィルタリング (3.3)
 
 <div class="grid grid-cols-2 gap-6 mt-2">
@@ -2356,9 +2405,8 @@ Warmup 改善により 4KB 単位でページを touch し、カーネルがペ�
 ### <span class="text-cyan-400">改善の方向性</span>
 
 **Faiss 向け: [Vector Reordering](https://github.com/opensearch-project/k-NN/issues/3096)**
-- Bipartite Graph Partitioning によるベクトル再配置
-- Gorder-PQ によるグラフ隣接関係の最適化
-- シーケンシャル I/O で**レイテンシ改善**
+- 空間的に近いベクトルをメモリ上でも近くに配置
+- キャッシュ効率向上でシーケンシャル I/O を実現
 
 **Lucene 向け: [Better Binary Quantization](https://github.com/opensearch-project/k-NN/issues/2805)**
 - RaBitQ ベースの高精度 1bit 量子化に対応
