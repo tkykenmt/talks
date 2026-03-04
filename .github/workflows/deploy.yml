@@ -32,15 +32,47 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Build all slides
+      - name: Detect changed slides
+        id: changes
+        run: |
+          if git rev-parse HEAD~1 >/dev/null 2>&1; then
+            changed=$(git diff --name-only HEAD~1 HEAD -- slides/ themes/ | grep -oP 'slides/\K[^/]+' | sort -u || true)
+          else
+            changed=""
+          fi
+          # workflow_dispatch or first commit → build all
+          if [ -z "$changed" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            changed=$(ls -1 slides/)
+          fi
+          echo "slides<<EOF" >> "$GITHUB_OUTPUT"
+          echo "$changed" >> "$GITHUB_OUTPUT"
+          echo "EOF" >> "$GITHUB_OUTPUT"
+          echo "Changed slides: $changed"
+
+      - name: Restore previous build
+        uses: actions/cache/restore@v4
+        with:
+          path: dist
+          key: slides-dist-${{ github.sha }}
+          restore-keys: slides-dist-
+
+      - name: Build changed slides
         run: |
           mkdir -p dist
-          for pkg in slides/*/; do
-            name=$(basename "$pkg")
+          while IFS= read -r name; do
+            [ -z "$name" ] && continue
+            echo "Building $name..."
             pnpm --filter "$name" build --base /${{github.event.repository.name}}/$name/
-            mv "$pkg/dist" "dist/$name"
+            rm -rf "dist/$name"
+            mv "slides/$name/dist" "dist/$name"
             cp "dist/$name/index.html" "dist/$name/404.html"
-          done
+          done <<< "${{ steps.changes.outputs.slides }}"
+
+      - name: Save build cache
+        uses: actions/cache/save@v4
+        with:
+          path: dist
+          key: slides-dist-${{ github.sha }}
 
       - name: Create index page
         run: |
