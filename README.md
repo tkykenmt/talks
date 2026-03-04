@@ -1,37 +1,38 @@
 # Talks
 
-Slidev を使ったプレゼンテーション集
+Presentations built with Slidev
 
-## スライド一覧
+## Slides
 
-| スライド | 公開URL |
-|----------|---------|
+| Slide | URL |
+|-------|-----|
 | [OpenSearch 2025-2026 Roadmap](./slides/20260205-opensearch-2025-2026-roadmap/) | [GitHub Pages](https://tkykenmt.github.io/talks/20260205-opensearch-2025-2026-roadmap/) |
+| [OpenSearch 2025-2026 Roadmap (EN)](./slides/20260205-opensearch-2025-2026-roadmap-en/) | [GitHub Pages](https://tkykenmt.github.io/talks/20260205-opensearch-2025-2026-roadmap-en/) |
 
-## 開発
+## Development
 
 ```bash
-# 依存関係インストール
+# Install dependencies
 pnpm install
 
-# 開発サーバー起動
+# Start dev server
 pnpm --filter <slide-name> dev
 
-# 例
+# Example
 pnpm --filter 20260205-opensearch-2025-2026-roadmap dev
 ```
 
-## PDF エクスポート
+## PDF Export
 
 ```bash
-# システムの Chrome を使用してエクスポート（フォント埋め込み対応）
+# Export using system Chrome (for font embedding)
 cd slides/<slide-name>
 pnpm slidev export --executable-path /usr/bin/google-chrome --output <slug>.pdf
 ```
 
-### 必要なフォント
+### Required Fonts
 
-PDF エクスポートでフォントが正しく表示されるよう、以下のフォントをシステムにインストールしてください：
+Install the following fonts for correct PDF rendering:
 
 ```bash
 # Ubuntu/Debian
@@ -39,11 +40,11 @@ sudo apt install fonts-noto-cjk fonts-noto-color-emoji fonts-open-sans
 fc-cache -fv
 ```
 
-## 構成
+## Structure
 
 ```
 talks/
-├── slides/     # スライドデッキ
-├── themes/     # ローカルテーマ
+├── slides/     # Slide decks
+├── themes/     # Local themes
 └── .github/    # GitHub Actions
 ```
